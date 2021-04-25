@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Let's Chat!</title>
+		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<center>
+			<div style="margin-right: 55%; margin-top: 0%; padding-top: 18%; padding-bottom: 21%;" class="jumbotron">
+				<img src="logo.png" class="logo">
+				<h1 class="kwitter">Kwitter</h1>
+				<h4>See what is happening in the world right now</h4>
+			</div>
+				<div style="margin-left: 50%; margin-right:10%; margin-top: -35%;;" class="form-group">
+					<h1 class="display-4">Sign Up</h1>
+					<input type="text" id="user_name" class="form-control" placeholder="User Name">
+					<div id="warning"></div>
+				</div>
+					<button  type="button" id="login_button" class="btn btn-outline-info" onclick="addUser()" onsubmit="addUser()">
+						Log in
+					</button>
+					<br><br>
+		</center>
+	</body>
+</html>
