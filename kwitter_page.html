@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Let's Chat!</title>
+		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="kwitter_page.js"></script>
+	</head>
+	<body>
+        <center>
+			<div class="container">
+				<div class="jumbotron" style="margin-top: 10px; padding-top: 5%;">
+					<button style="margin-left: 90%;" class="btn btn-outline-danger" onclick="logout()">Log out</button>
+					<div>
+						<img src="logo.png" class="logo">
+						<h1 class="kwitter">Kwitter</h1>
+						<h4>See what is happening in the world right now</h4>
+					</div>
+				</div>
+				<h1 id="name" class="display-3 text-center"></h1>
+			</div>
+				<div class="form-group input_div_room_page">
+					<h3>Add Room:</h3>
+					<div class="input-group mb-3">
+						<input id="room_name" type="text" class="form-control" placeholder="Room Name">
+						<div class="input-group-append">
+							<button class="btn btn-outline-info" onclick="addRoom()">Add Room</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div style="margin-bottom: 10%;">
+				<pre class="display-4 color_white">#TRENDINGROOMS</pre>
+				<div id="output"></div>
+			</div>
+        </center>
+	</body>
+</html>
