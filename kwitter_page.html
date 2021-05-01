@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Let's Chat!</title>
+		<title>Select Your Room</title>
 		<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -24,22 +24,23 @@
 						<h4>See what is happening in the world right now</h4>
 					</div>
 				</div>
-				<h1 id="name" class="display-3 text-center"></h1>
-			</div>
+				<h1 id="name" class="display-1 text-center">Welcome User!</h1>
 				<div class="form-group input_div_room_page">
-					<h3>Add Room:</h3>
+					<h3 style="color: white;">Add Room:</h3>
 					<div class="input-group mb-3">
-						<input id="room_name" type="text" class="form-control" placeholder="Room Name">
+						<input id="roomname" type="text" class="form-control" placeholder="Room Name">
 						<div class="input-group-append">
-							<button class="btn btn-outline-info" onclick="addRoom()">Add Room</button>
+							<button class="btn btn-info" onclick="add_room();">Add Room</button>
 						</div>
 					</div>
 				</div>
-			</div>	
-			<div style="margin-bottom: 10%;">
-				<pre class="display-4 color_white">#TRENDINGROOMS</pre>
-				<div id="output"></div>
+				<div class="card">
+					<div class="card-body">
+						<p><strong>Pick up where you left! See your <a href="history_room.html">history rooms!</a></strong></p>
+					</div>
+				</div>
 			</div>
+
         </center>
 	</body>
 </html>

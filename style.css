@@ -103,3 +103,7 @@ h2
 {
 	margin-top: 5%;text-align:left;margin-bottom: 10%;
 }
+
+#name,#room_name {
+	border-radius: 30px;
+}
