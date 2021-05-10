@@ -1,3 +1,14 @@
+var firebaseConfig = {
+  apiKey: "AIzaSyBaVq6No-ifQ2yzOKmZrySjDlhwgaZRoko",
+  authDomain: "adv-c92345.firebaseapp.com",
+  databaseURL: "https://adv-c92345-default-rtdb.firebaseio.com",
+  projectId: "adv-c92345",
+  storageBucket: "adv-c92345.appspot.com",
+  messagingSenderId: "129276350146",
+  appId: "1:129276350146:web:6aad9eb463ed16b732f55b"
+};
+
+firebase.initializeApp(firebaseConfig);
 
 function back() {
     localStorage.removeItem("name");
@@ -30,5 +41,5 @@ function addRoom() {
 function redirectToRoomName(name) {
   console.log(name);
   localStorage.setItem("Room Name", name);
-  window.location = "kwitter_page.html";
+  window.location = "kwitter_chat.html";
 }
